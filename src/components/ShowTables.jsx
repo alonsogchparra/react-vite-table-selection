@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { TableCharacters } from './TableCharacters';
 import { descendingComparator } from '../utils/descendingComparator';
 import { TableContentSelected } from './TableContentSelected';
+import { Repository } from './Repository';
 
 export const ShowTables = () => {
   const [characters, setCharacters] = useState([]);
@@ -141,6 +142,7 @@ export const ShowTables = () => {
             removeCharacterSelected={removeCharacterSelected}
           />
         </Grid>
+        <Repository />
       </Grid>
     </>
   );
