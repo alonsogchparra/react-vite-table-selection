@@ -4,6 +4,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { useEffect, useState } from 'react';
 import { TableCharacters } from './TableCharacters';
 import { descendingComparator } from '../utils/descendingComparator';
+import { TableContentSelected } from './TableContentSelected';
 
 export const ShowTables = () => {
   const [characters, setCharacters] = useState([]);
@@ -134,7 +135,12 @@ export const ShowTables = () => {
             handleRowsPerPageChange={handleRowsPerPageChange}
           />
         </Grid>
-        <Grid xs={12} md={6}></Grid>
+        <Grid xs={12} md={6}>
+          <TableContentSelected
+            charactersSelected={charactersSelected}
+            removeCharacterSelected={removeCharacterSelected}
+          />
+        </Grid>
       </Grid>
     </>
   );
