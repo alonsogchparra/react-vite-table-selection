@@ -23,3 +23,5 @@ yarn dev
 ```
 
 This is my first time using Vite and React Query I had the curiosity to check how I could work with this. I challenge you to do the same.
+
+Also you can check how the project goes **[here](https://alonsogchparra.github.io/react-vite-table-selection/)**
